@@ -1,16 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ExercicioMatriz
+namespace AppMatriz
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int[,] matriz = new int[3, 3];
+            
+            int[,] m = new int[3, 3];
+
+            ObjMatriz objMatriz = new ObjMatriz(m);
+
+            objMatriz.CriarMatriz();
+
+            objMatriz.DiagonalPrincipal_Christofer();
+
+            //int resultado = objMatriz.DiagonalPrincipal_Christofer();
+            
+            //Console.WriteLine("Resultado: " + resultado);
 
         }
     }
